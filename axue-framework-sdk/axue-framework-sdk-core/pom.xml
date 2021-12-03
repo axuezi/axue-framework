@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>axue-framework-sdk</artifactId>
+        <groupId>com.axue.framework</groupId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>axue-framework-sdk-core</artifactId>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>SDK 核心模块</description>
+
+    <dependencies>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
+        <!-- json相关 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.78</version>
+        </dependency>
+        <!-- hutool -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.7.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.3</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 显式指定编译插件的版本和编译的JDK版本 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <!-- 配置spring-boot的maven打包插件 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--    &lt;!&ndash; 配置私服下载jar包地址 &ndash;&gt;-->
+    <!--    <repositories>-->
+    <!--        <repository>-->
+    <!--            <id>space-repository</id>-->
+    <!--            <url>http://nexus.space.com/repository/maven-public/</url>-->
+    <!--            <snapshots>-->
+    <!--                <enabled>true</enabled>-->
+    <!--            </snapshots>-->
+    <!--        </repository>-->
+    <!--    </repositories>-->
+
+    <!--    &lt;!&ndash; 配置私服下载插件jar包地址 &ndash;&gt;-->
+    <!--    <pluginRepositories>-->
+    <!--        <pluginRepository>-->
+    <!--            <id>space-plugin-repository</id>-->
+    <!--            <url>http://nexus.space.com/repository/maven-public/</url>-->
+    <!--            <snapshots>-->
+    <!--                <enabled>true</enabled>-->
+    <!--            </snapshots>-->
+    <!--        </pluginRepository>-->
+    <!--    </pluginRepositories>-->
+
+    <!--    &lt;!&ndash; 配置私服上传jar包地址 &ndash;&gt;-->
+    <!--    <distributionManagement>-->
+    <!--        &lt;!&ndash; release包上传地址 &ndash;&gt;-->
+    <!--        <repository>-->
+    <!--            <id>space-release</id>-->
+    <!--            <url>http://nexus.space.com/repository/maven-releases/</url>-->
+    <!--        </repository>-->
+    <!--        &lt;!&ndash; snapshot包上传地址 &ndash;&gt;-->
+    <!--        <snapshotRepository>-->
+    <!--            <id>space-snapshot</id>-->
+    <!--            <url>http://nexus.space.com/repository/maven-snapshots/</url>-->
+    <!--        </snapshotRepository>-->
+    <!--    </distributionManagement>-->
+
+</project>

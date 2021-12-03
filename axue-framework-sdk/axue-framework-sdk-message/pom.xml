@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>axue-framework-sdk</artifactId>
+        <groupId>com.axue.framework</groupId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>axue-framework-sdk-message</artifactId>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>消息-SDK</description>
+
+    <dependencies>
+        <!-- 引入SDK CORE 包-->
+        <dependency>
+            <groupId>com.axue.framework</groupId>
+            <artifactId>axue-framework-sdk-core</artifactId>
+            <optional>true</optional>
+            <version>${revision}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

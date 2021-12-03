@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.axue.framework</groupId>
+        <artifactId>axue-framework-bom</artifactId>
+        <version>${revision}</version>
+        <relativePath>../../axue-framework-bom/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>axue-framework-boot-plugins</artifactId>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>插件集合</description>
+
+    <modules>
+        <module>axue-framework-boot-plugin-mybatis-plus</module>
+        <module>axue-framework-boot-plugin-swagger</module>
+        <module>axue-framework-boot-plugin-data-redis</module>
+        <module>axue-framework-boot-plugin-data-elasticsearch</module>
+        <module>axue-framework-boot-plugin-rocketmq</module>
+        <module>axue-framework-boot-plugin-kafka</module>
+    </modules>
+
+</project>

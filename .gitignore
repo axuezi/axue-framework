@@ -1,0 +1,86 @@
+### maven ###
+target/
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+.flattened-pom.xml
+
+
+### gradle ###
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+rebel.xml
+
+
+### Power Designer ###
+*.pdb
+
+### system ignore ###
+.DS_Store
+Thumbs.db
+Servers
+.metadata
+
+
+### STS&&Eclipse ###
+.settings/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+
+### visual studio ###
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+### vscode ###
+.vscode
+node_modules
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+*.history
+
+
+### logs ###
+/logs/
+*.log
+
+
+### temp ignore ###
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~

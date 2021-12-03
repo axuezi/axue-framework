@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.axue.framework</groupId>
+    <artifactId>axue-framework-parent</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <revision>1.0.0</revision>
+        <maven_flatten_version>1.1.0</maven_flatten_version>
+    </properties>
+
+    <modules>
+        <module>axue-framework-bom</module>
+        <module>axue-framework-boot</module>
+        <module>axue-framework-common</module>
+        <module>axue-framework-cache</module>
+        <module>axue-framework-cloud</module>
+        <module>axue-framework-mq</module>
+        <module>axue-framework-orm</module>
+        <module>axue-framework-rpc</module>
+        <module>axue-framework-sdk</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <!-- 使用${revision}作为版本管理需要使用的插件 -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <version>${maven_flatten_version}</version>
+                <configuration>
+                    <updatePomFile>true</updatePomFile>
+                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>flatten</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>flatten.clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+<!--    &lt;!&ndash; 配置私服下载jar包地址 &ndash;&gt;-->
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>space-repository</id>-->
+<!--            <url>http://nexus.space.com/repository/maven-public/</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
+<!--    &lt;!&ndash; 配置私服下载插件jar包地址 &ndash;&gt;-->
+<!--    <pluginRepositories>-->
+<!--        <pluginRepository>-->
+<!--            <id>space-plugin-repository</id>-->
+<!--            <url>http://nexus.space.com/repository/maven-public/</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </pluginRepository>-->
+<!--    </pluginRepositories>-->
+
+<!--    &lt;!&ndash; 配置私服上传jar包地址 &ndash;&gt;-->
+<!--    <distributionManagement>-->
+<!--        &lt;!&ndash; release包上传地址 &ndash;&gt;-->
+<!--        <repository>-->
+<!--            <id>space-release</id>-->
+<!--            <url>http://nexus.space.com/repository/maven-releases/</url>-->
+<!--        </repository>-->
+<!--        &lt;!&ndash; snapshot包上传地址 &ndash;&gt;-->
+<!--        <snapshotRepository>-->
+<!--            <id>space-snapshot</id>-->
+<!--            <url>http://nexus.space.com/repository/maven-snapshots/</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
+
+</project>
