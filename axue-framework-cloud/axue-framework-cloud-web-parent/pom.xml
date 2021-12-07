@@ -104,7 +104,7 @@
 <!--    <repositories>-->
 <!--        <repository>-->
 <!--            <id>space-repository</id>-->
-<!--            <url>http://nexus.space.com/repository/maven-public/</url>-->
+<!--            <url>http://nexus.axue.com/repository/maven-public/</url>-->
 <!--            <snapshots>-->
 <!--                <enabled>true</enabled>-->
 <!--            </snapshots>-->
@@ -115,7 +115,7 @@
 <!--    <pluginRepositories>-->
 <!--        <pluginRepository>-->
 <!--            <id>space-plugin-repository</id>-->
-<!--            <url>http://nexus.space.com/repository/maven-public/</url>-->
+<!--            <url>http://nexus.axue.com/repository/maven-public/</url>-->
 <!--            <snapshots>-->
 <!--                <enabled>true</enabled>-->
 <!--            </snapshots>-->
@@ -127,12 +127,12 @@
 <!--        &lt;!&ndash; release包上传地址 &ndash;&gt;-->
 <!--        <repository>-->
 <!--            <id>space-release</id>-->
-<!--            <url>http://nexus.space.com/repository/maven-releases/</url>-->
+<!--            <url>http://nexus.axue.com/repository/maven-releases/</url>-->
 <!--        </repository>-->
 <!--        &lt;!&ndash; snapshot包上传地址 &ndash;&gt;-->
 <!--        <snapshotRepository>-->
 <!--            <id>space-snapshot</id>-->
-<!--            <url>http://nexus.space.com/repository/maven-snapshots/</url>-->
+<!--            <url>http://nexus.axue.com/repository/maven-snapshots/</url>-->
 <!--        </snapshotRepository>-->
 <!--    </distributionManagement>-->
 
