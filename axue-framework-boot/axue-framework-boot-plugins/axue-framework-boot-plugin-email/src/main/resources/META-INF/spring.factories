@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.axue.framework.boot.plugin.email.config.EmailConfiguration,\
+  com.axue.framework.boot.plugin.email.config.EmailConfigProperties,\
+  com.axue.framework.boot.plugin.email.util.EmailUtils

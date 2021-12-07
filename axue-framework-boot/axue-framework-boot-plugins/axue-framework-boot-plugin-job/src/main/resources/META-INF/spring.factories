@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.axue.framework.boot.plugin.job.properties.XxlAdminProperties,\
+  com.axue.framework.boot.plugin.job.properties.XxlExecutorProperties,\
+  com.axue.framework.boot.plugin.job.properties.XxlJobProperties,\
+  com.axue.framework.boot.plugin.job.config.XxlJobConfig

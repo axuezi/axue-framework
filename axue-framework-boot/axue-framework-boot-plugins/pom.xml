@@ -23,6 +23,10 @@
         <module>axue-framework-boot-plugin-data-elasticsearch</module>
         <module>axue-framework-boot-plugin-rocketmq</module>
         <module>axue-framework-boot-plugin-kafka</module>
+        <module>axue-framework-boot-plugin-email</module>
+        <module>axue-framework-boot-plugin-job</module>
+        <module>axue-framework-boot-plugin-storage</module>
+        <module>axue-framework-boot-plugin-sms</module>
     </modules>
 
 </project>
