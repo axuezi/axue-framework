@@ -3,4 +3,4 @@ server:
 
 spring:
   application:
-    name: space-framework-demo-monolithic
+    name: axue-framework-demo-monolithic
