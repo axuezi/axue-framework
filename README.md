@@ -1,6 +1,43 @@
-# 1. 工程集成引入
+#项目说明
 
-## 集成网关引入
+## 1. 项目结构
+```yaml
+.
+├─ axue-framework-bom                     Framework Dependencies BOM
+├─ axue-framework-boot
+│  ├─ axue-framework-boot-parent          SpringBoot Parent 封装
+│  └─ axue-framework-boot-plugins
+│      ├─ axue-framework-boot-plugin-data-elasticsearch    Elasticsearch插件
+│      ├─ axue-framework-boot-plugin-data-redis            Redis插件
+│      ├─ axue-framework-boot-plugin-email                 Email插件
+│      ├─ axue-framework-boot-plugin-job                   xxl-job插件
+│      ├─ axue-framework-boot-plugin-kafka                 kafka插件
+│      ├─ axue-framework-boot-plugin-mybatis-plus          Mybatis Plus插件
+│      ├─ axue-framework-boot-plugin-rocketmq              rockermq插件
+│      ├─ axue-framework-boot-plugin-sms                   短信插件
+│      ├─ axue-framework-boot-plugin-storage               云存储插件
+│      └─ axue-framework-boot-plugin-swagger               Swagger插件
+├─ axue-framework-cache                     缓存框架
+├─ axue-framework-cloud
+│  ├─ axue-framework-cloud-gateway-parent          微服务gateway网关模块父工程 
+│  ├─ axue-framework-cloud-parent                  微服务父工程
+│  ├─ axue-framework-cloud-web-parent              微服务web项目父工程
+│  └─ axue-framework-cloud-web-plus-parent         微服务web项目插件增强父工程
+├─ axue-framework-common                           公共包
+├─ axue-framework-demo                      样例工程
+│  ├─ axue-framework-demo-microservice             微服务样例项目
+│  └─ axue-framework-demo-monolithic               单体(巨石系统monolithic)样例项目
+├─ axue-framework-mq                        消息队列框架
+├─ axue-framework-orm                       orm框架
+├─ axue-framework-rpc                       RPC远程调用框架
+└─ axue-framework-sdk                       SDK封装
+   ├─ axue-framework-sdk-core                      SDK 核心模块
+   └─ axue-framework-sdk-message                   Message 消息中心SDK
+```
+
+## 2. 工程集成引入
+
+### 集成网关引入
 
 ```xml
 
@@ -12,7 +49,7 @@
 </parent>
 ```
 
-## 集成SpringBoot工程
+### 集成SpringBoot工程
 
 ```xml
 
@@ -24,7 +61,7 @@
 </parent>
 ```
 
-## 集成微服务web工程
+### 集成微服务web工程
 
 ```xml
 
@@ -36,7 +73,7 @@
 </parent>
 ```
 
-## 集成微服务plus-web工程
+### 集成微服务plus-web工程
 
 ```xml
 
@@ -48,7 +85,7 @@
 </parent>
 ```
 
-## 集成微服务父工程
+### 集成微服务父工程
 
 ```xml
 
@@ -60,7 +97,7 @@
 </parent>
 ```
 
-## 集成消息SDK
+### 集成消息SDK
 
 ```xml
 
@@ -72,9 +109,9 @@
 </parent>
 ```
 
-# 2. 插件集成引入
+## 3. 插件集成引入
 
-## Mybatis-Plus插件集成
+### Mybatis-Plus插件集成
 
 ```xml
 
@@ -86,7 +123,7 @@
 </parent>
 ```
 
-## Swagger插件集成
+### Swagger插件集成
 
 1. 引入pom文件
 
@@ -109,7 +146,7 @@ axue:
     scan-package: # 扫包路径
 ```
 
-## Redis插件集成
+### Redis插件集成
 
 ```xml
 
@@ -121,7 +158,7 @@ axue:
 </parent>
 ```
 
-## ES插件集成
+### ES插件集成
 
 ```xml
 
@@ -133,7 +170,7 @@ axue:
 </parent>
 ```
 
-## MQ插件集成
+### MQ插件集成
 
 ```xml
 
@@ -145,7 +182,7 @@ axue:
 </parent>
 ```
 
-## kafka插件集成
+### kafka插件集成
 
 ```xml
 
@@ -157,7 +194,7 @@ axue:
 </parent>
 ```
 
-## Email插件集成
+### Email插件集成
 
 1. 引入pom文件
 
@@ -181,7 +218,7 @@ email:
   site-name: # 站点名称
 ```
 
-## XXL-JOB插件集成
+### XXL-JOB插件集成
 
 1. 引入pom文件
 
@@ -211,7 +248,7 @@ xxl:
       logRetentionDays: # 执行器日志保存天数 [选填] ：值大于3时生效，启用执行器Log文件定期清理功能，否则不生效；
 ```
 
-## 云存储服务 插件集成
+### 云存储服务 插件集成
 
 ```xml
 
@@ -223,7 +260,7 @@ xxl:
 </parent>
 ```
 
-## 短信插件集成
+### 短信插件集成
 
 ```xml
 

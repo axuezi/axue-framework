@@ -14,7 +14,7 @@
     <artifactId>axue-framework-sdk</artifactId>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
-    <description>SDK核心</description>
+    <description>SDK封装</description>
 
     <properties>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
