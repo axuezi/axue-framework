@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.axue.framework</groupId>
+        <artifactId>axue-framework-boot-parent</artifactId>
+        <version>${revision}</version>
+        <relativePath>../../axue-framework-boot/axue-framework-boot-parent/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>axue-framework-demo-monolithic</artifactId>
+    <name>${project.artifactId}</name>
+    <description>单体(巨石系统monolithic)样例项目</description>
+
+</project>

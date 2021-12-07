@@ -24,6 +24,7 @@
         <module>axue-framework-orm</module>
         <module>axue-framework-rpc</module>
         <module>axue-framework-sdk</module>
+        <module>axue-framework-demo</module>
     </modules>
 
     <build>
