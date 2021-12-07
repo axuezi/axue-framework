@@ -1,5 +1,6 @@
 package com.axue.framework.demo.monolithic.exception;
 
+
 import com.axue.framework.common.result.Result;
 import com.axue.framework.common.result.ResultCodeEnum;
 import lombok.extern.slf4j.Slf4j;
