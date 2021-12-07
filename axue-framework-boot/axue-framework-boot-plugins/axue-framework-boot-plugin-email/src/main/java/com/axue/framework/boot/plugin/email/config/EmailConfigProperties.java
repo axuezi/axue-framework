@@ -12,12 +12,12 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(prefix = "email")
 public class EmailConfigProperties {
 
-    private String mailSmtpHost = "mailSmtpHost";
+    private String mailSmtpHost;
 
-    private String mailSmtpUsername = "mailSmtpUsername";
+    private String mailSmtpUsername;
 
-    private String mailSmtpPassword = "mailSmtpPassword";
+    private String mailSmtpPassword;
 
-    private String siteName = "siteName";
+    private String siteName;
 
 }
