@@ -1,13 +1,11 @@
 package com.axue.framework.demo.monolithic.controller;
 
-import com.axue.framework.common.annotation.ResponseResult;
 import com.axue.framework.common.result.Result;
 import lombok.Data;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@ResponseResult
 public class HelloController {
 
     @GetMapping("/hello")
