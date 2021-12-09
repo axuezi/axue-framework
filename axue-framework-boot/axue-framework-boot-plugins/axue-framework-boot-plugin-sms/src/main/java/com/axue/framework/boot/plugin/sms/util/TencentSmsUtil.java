@@ -8,7 +8,6 @@ import com.tencentcloudapi.common.profile.ClientProfile;
 import com.tencentcloudapi.common.profile.HttpProfile;
 import com.tencentcloudapi.sms.v20190711.SmsClient;
 import com.tencentcloudapi.sms.v20190711.models.*;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
@@ -18,7 +17,6 @@ import java.util.stream.Stream;
  *
  * @author axue
  */
-@Slf4j
 public class TencentSmsUtil {
 
     /**

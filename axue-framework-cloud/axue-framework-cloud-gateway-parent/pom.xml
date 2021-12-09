@@ -95,40 +95,40 @@
         </plugins>
     </build>
 
-<!--    &lt;!&ndash; 配置私服下载jar包地址 &ndash;&gt;-->
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>axue-repository</id>-->
-<!--            <url>http://nexus.axue.com/repository/maven-public/</url>-->
-<!--            <snapshots>-->
-<!--                <enabled>true</enabled>-->
-<!--            </snapshots>-->
-<!--        </repository>-->
-<!--    </repositories>-->
+    <!-- 配置私服下载jar包地址 -->
+    <repositories>
+        <repository>
+            <id>maven-repository</id>
+            <url>http://nexus.springbook.cn/repository/maven-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
-<!--    &lt;!&ndash; 配置私服下载插件jar包地址 &ndash;&gt;-->
-<!--    <pluginRepositories>-->
-<!--        <pluginRepository>-->
-<!--            <id>axue-plugin-repository</id>-->
-<!--            <url>http://nexus.axue.com/repository/maven-public/</url>-->
-<!--            <snapshots>-->
-<!--                <enabled>true</enabled>-->
-<!--            </snapshots>-->
-<!--        </pluginRepository>-->
-<!--    </pluginRepositories>-->
+    <!-- 配置私服下载插件jar包地址 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven-plugin-repository</id>
+            <url>http://nexus.springbook.cn/repository/maven-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
-<!--    &lt;!&ndash; 配置私服上传jar包地址 &ndash;&gt;-->
-<!--    <distributionManagement>-->
-<!--        &lt;!&ndash; release包上传地址 &ndash;&gt;-->
-<!--        <repository>-->
-<!--            <id>axue-release</id>-->
-<!--            <url>http://nexus.axue.com/repository/maven-releases/</url>-->
-<!--        </repository>-->
-<!--        &lt;!&ndash; snapshot包上传地址 &ndash;&gt;-->
-<!--        <snapshotRepository>-->
-<!--            <id>axue-snapshot</id>-->
-<!--            <url>http://nexus.axue.com/repository/maven-snapshots/</url>-->
-<!--        </snapshotRepository>-->
-<!--    </distributionManagement>-->
+    <!-- 配置私服上传jar包地址 -->
+    <distributionManagement>
+        <!-- release包上传地址 -->
+        <repository>
+            <id>maven-releases</id>
+            <url>http://nexus.springbook.cn/repository/maven-releases/</url>
+        </repository>
+        <!-- snapshot包上传地址 -->
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>http://nexus.springbook.cn/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>

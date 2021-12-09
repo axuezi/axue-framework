@@ -4,14 +4,12 @@ import com.aliyun.dysmsapi20170525.*;
 import com.aliyun.dysmsapi20170525.models.*;
 import com.aliyun.teaopenapi.models.*;
 import com.axue.framework.boot.plugin.sms.entity.SmsConfig;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 阿里云短信服务工具类
  *
  * @author axue
  */
-@Slf4j
 public class AlibabaSmsUtil {
 
     /**
